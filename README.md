@@ -28,6 +28,7 @@ Three ways to achieve Dependency Injection:
   ```
 ### 2. Setter Injection
   Example:
+    ```
     In the class we create a setter to set the service
     class Controller{
         private Service service;
@@ -38,3 +39,4 @@ Three ways to achieve Dependency Injection:
           service.doSomething();
         }
     }
+    ```
