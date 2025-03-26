@@ -14,6 +14,7 @@ So, for example in Controller instead of creating an object for service. We just
 Three ways to achieve Dependency Injection:
 ### 1. Constructor Injection
   Example:
+  ```
     In the class we create a service
     class Controller{
         private Service service;
@@ -23,7 +24,8 @@ Three ways to achieve Dependency Injection:
         public void handleRequest(){
           service.doSomething();
         }
-    }
+  }
+  ```
 ### 2. Setter Injection
   Example:
     In the class we create a setter to set the service
