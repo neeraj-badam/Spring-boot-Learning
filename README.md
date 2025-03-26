@@ -24,12 +24,12 @@ Three ways to achieve Dependency Injection:
         public void handleRequest(){
           service.doSomething();
         }
-  }
+    }
   ```
 ### 2. Setter Injection
   Example:
-    ```
     In the class we create a setter to set the service
+    ```
     class Controller{
         private Service service;
         public void setService(Service service){
@@ -40,3 +40,15 @@ Three ways to achieve Dependency Injection:
         }
     }
     ```
+### 3. Field Injection
+  Example:
+  Here we have loosely coupled field where we can use that to call the service
+  ```
+      class Controller{
+        @Autowired
+        private Service service;
+        public void handleRequest(){
+          service.doSomething();
+        }
+      }
+  ```
