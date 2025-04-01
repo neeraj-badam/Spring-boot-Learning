@@ -71,3 +71,11 @@ In Spring Framework, we use a xml file and define the classes to create in the I
 To change port use server.port in application.properties
 
 server.port=8081
+
+ORM -> Object Relational Mapping
+ORM Tools: Hibernate, Eclipse link, My batis. Hibernate is the best tool.
+
+So learning these tools, if there is a new tool then we should learn that tool too. So, we have JPA.
+JPA is just the standards, hibernate implements those standards.
+
+JPA = Java Persistence API
