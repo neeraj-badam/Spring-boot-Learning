@@ -69,3 +69,5 @@ If we use Auto wiring where there is more than one class that implement an inter
 In Spring Framework, we use a xml file and define the classes to create in the IOC container, and set variables if needed, autowiring.
 
 To change port use server.port in application.properties
+
+server.port=8081
