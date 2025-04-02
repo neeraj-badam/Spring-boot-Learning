@@ -79,3 +79,6 @@ So learning these tools, if there is a new tool then we should learn that tool t
 JPA is just the standards, hibernate implements those standards.
 
 JPA = Java Persistence API
+
+
+Before the request goes to the servlet Controller, DispatcherServlet, every request passes through this before even coming to the controller.
