@@ -82,3 +82,14 @@ JPA = Java Persistence API
 
 
 Before the request goes to the servlet Controller, DispatcherServlet, every request passes through this before even coming to the controller.
+
+
+While adding Spring Security. Along with Auth, we should also sent CSRF Token in headers:
+X-CSRF-TOKEN: VALUE
+
+application.properties:
+spring.security.user.name=user
+spring.security.user.password=password
+So, while we are using username, password to authenticate, while the one that we are getting authenticated is UserDetailsService
+
+First we receive an authentication object(which is Unauthenticated) from the user, then it's sent to Authentication Provider this will validate it and then it becomes Authentication object.
