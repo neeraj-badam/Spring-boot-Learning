@@ -93,3 +93,10 @@ spring.security.user.password=password
 So, while we are using username, password to authenticate, while the one that we are getting authenticated is UserDetailsService
 
 First we receive an authentication object(which is Unauthenticated) from the user, then it's sent to Authentication Provider this will validate it and then it becomes Authentication object.
+
+
+How to use User Authentication from Database in Spring:
+First we add dependency in pom.xml like spring data jpa, Database
+Add database details application.properties
+Implement SecurityConfig and implement provider to use Database Authentication, which is DaoAuthenticationProvider, to make it work we pass passwordEncoder, UserDetailsService
+So for UserDetailsService, we create our own Service and implement UserDetailsService interface and here we use Repo to connect to the database.
