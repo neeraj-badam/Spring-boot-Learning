@@ -1,7 +1,7 @@
 ### IOC Container
 
 IoC stands for Inversion of Control, and the IoC Container is a core part of the Spring Framework. 
-Its main responsibility is to manage the lifecycle and dependencies of objects, which we refer to as beans in Spring.
+Its main responsibility is to manage the lifecycle and dependencies of objects, where we call as beans in Spring.
 In a Spring Boot application, the IoC container is initialized when the application starts. It:
 - Creates beans based on annotations like @Component, @Service, @Repository, or @Configuration
 - Resolves and injects dependencies using mechanisms like @Autowired or constructor injection
